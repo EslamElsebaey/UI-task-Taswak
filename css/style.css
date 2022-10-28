@@ -368,6 +368,12 @@ form .send {
     .touch-section{
         margin-bottom: 40px;
     }
+    .main-menu-list li a::after{
+        right: -35px;
+    }
+    .main-menu-list li a::before{
+        left: -35px;
+    }
 }
 
 @media screen and (max-width : 768px) {

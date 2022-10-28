@@ -362,6 +362,12 @@ form .send {
     .touch-text{
         font-size: 35px;
     }
+    .form-section{
+        margin-top: 50px;
+    }
+    .touch-section{
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width : 768px) {

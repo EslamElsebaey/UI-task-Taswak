@@ -1,4 +1,5 @@
 $(document).ready(()=>{
+  /* I used setTimeOut here because this app dosen't have enough data to let it loading slowly*/
     setTimeout(() => {
         $("#preloader").css({
             opacity : "0" , 
@@ -8,7 +9,9 @@ $(document).ready(()=>{
        setTimeout(() => {
        $(".loader").css("opacity"  , "0") ;
     }, 1000); 
-/* I used setTimeOut here because this app dosen't have enough data to let it loading slowly*/
+
+
+// open and close the main orange menu.
 $(document).on("click", ".menu-bars", function () {
     if ($(".main-menu").hasClass("d-none") === true) {
       $(".main-menu").removeClass("d-none");
@@ -28,7 +31,14 @@ $(document).on("click", ".menu-bars", function () {
         $("<img class='logo' src='images/logo.png'>").insertAfter(".close-section") ;
     }
   });
+  
+  // prevent the (send) button to reload the page.
+$(".send").click((e)=>{
+  e.preventDefault();
+  })
+  
 })
+
 
 
 

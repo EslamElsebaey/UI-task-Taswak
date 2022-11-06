@@ -385,5 +385,10 @@ form .send {
 }
 
 
+@media screen and (min-height : 800px) {
+    .home{
+        height: 100vh;
+    }
+}
 
 
